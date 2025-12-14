@@ -7,10 +7,10 @@ import authRouter from "./routes/authRouter"
 import morgan from "morgan"
 import IUserTokenPayload from "./interfaces/IUserTokenPayload"
 import dotenv from "dotenv"
-import logger from "./config/logger"
 import path from "node:path"
 import fs from "node:fs"
 import emailService from "./services/emailService"
+import logger from "./middlewares/logger"
 
 dotenv.config()
 
